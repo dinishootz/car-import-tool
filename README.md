@@ -1,29 +1,24 @@
 
-# Car Import Backend
+# Car Import Backend - Vercel
 
-Este é o backend para análise de importação de carros.
+Este é o backend para análise de importação de carros, pronto para ser hospedado no Vercel.
 
 ## 🚀 Como usar
 
-### 1️⃣ Instalar as dependências
-```bash
-pip install -r requirements.txt
-```
+### 1️⃣ Fazer Upload no GitHub
+1. **Cria um repositório no GitHub** (exemplo: `car-import-backend`).
+2. **Extrai este ZIP** e faz upload dos ficheiros (`server.py`, `vercel.json`, etc.).
 
-### 2️⃣ Iniciar o servidor
-```bash
-uvicorn main:app --host 0.0.0.0 --port 8000 --reload
-```
+### 2️⃣ Configurar o Vercel
+1. **Cria uma conta gratuita no [Vercel](https://vercel.com/)**.
+2. **Liga o Vercel ao teu GitHub**.
+3. **Importa o repositório `car-import-backend`**.
+4. **Faz deploy e espera pelo link gerado**.
 
-### 3️⃣ Aceder ao endpoint para análise
-Abrir no navegador:
+### 3️⃣ Testar a API
+Depois do deploy, o Vercel irá gerar um link como este:
 ```
-http://127.0.0.1:8000/analyze?url=https://www.mobile.de/example
+https://car-import-backend.vercel.app/analyze?url=https://www.mobile.de/example
 ```
+Agora já podes usar o backend na tua aplicação frontend! 🚀
 
-## 📦 Como hospedar no GitHub + Vercel
-1. **Fazer upload do código para um repositório no GitHub**.
-2. **Criar um projeto no [Vercel](https://vercel.com/)**.
-3. **Conectar o repositório e fazer deploy automático**.
-
-Agora podes usar a API online sem precisar de um servidor próprio! 🚀
